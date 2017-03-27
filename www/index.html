@@ -1,0 +1,42 @@
+
+
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+<!--new code-->
+<p>Feet :<input id="Feet" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Meters:<input id="Meters" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+<p>Inches:<input id="Inches" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+<p>Centimeter:<input id="Centimeter" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+<p>Yards:<input id="Yards" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+<p>Kilometers:<input id="Kilometers" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+<p>Miles:<input id="Miles" type="number" placeholder="Feet" oninput="LengthConverter(this.id,this.value)" onchange="LengthConverter(this.value)"></p>
+
+
+
+
+
+        <script src="cordova.js"></script>
+        <script src="JS/converter.js"></script>
+        <script>
+            var phonegapReady = function(){
+                oStatus = document.getElementById("connectionStatus");
+                oStatus.innerHTML = "Now connected to phonegap";
+                oStatus.style.color = "green";
+            }
+
+            document.addEventListener("deviceready", phonegapReady, false);
+
+        </script>
+    </body>
+</html>
+
